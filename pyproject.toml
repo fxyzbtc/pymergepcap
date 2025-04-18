@@ -1,6 +1,6 @@
 [project]
 name = "pymergepcap"
-version = "0.1.1"
+version = "0.1.2"
 description = "A modern Python GUI tool to generate mergecap commands for merging multiple PCAP or CAP files using Wireshark's mergecap.exe. Features an intuitive interface, flexible configuration, and safe command generation for Windows users."
 readme = "README.md"
 requires-python = ">=3.12"
