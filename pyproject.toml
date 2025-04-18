@@ -10,6 +10,8 @@ dependencies = [
     "typer>=0.15.2",
 ]
 
+urls = { "Repository" = "https://github.com/fxyzbtc/pymergepcap" }
+
 [project.scripts]
 pymergecap = "pymergecap.main:main"
 
