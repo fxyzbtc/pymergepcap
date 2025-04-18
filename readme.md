@@ -15,7 +15,6 @@ A simple Python GUI tool to generate mergecap commands for merging multiple PCAP
 - **Flexible Input**: Select a folder containing `.cap` or `.pcap` files to merge.
 - **Output Selection**: Choose your target merged PCAP file.
 - **Command Generation**: Generates the full Windows command for `mergecap.exe` with all paths properly quoted.
-- **No Execution**: For safety, the tool only generates the command; you run it manually in your terminal.
 - **Cross-Platform Python**: Works with Python 3.12+ on Windows.
 
 ## Installation
