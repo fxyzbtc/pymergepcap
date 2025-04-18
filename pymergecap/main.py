@@ -3,6 +3,7 @@ import FreeSimpleGUI as sg
 from loguru import logger
 import configparser
 from pathlib import Path
+import subprocess
 
 def load_config():
     config = configparser.ConfigParser()
@@ -71,8 +72,11 @@ def main():
             else:
                 output_file_path = quote_path(output_file)
             input_files_paths = [quote_path(f) for f in input_files]
-            command = f'{mergecap_path} -w {output_file_path} ' + ' '.join(input_files_paths)
+            command = f'{mergecap_path} -w {output_file_path} ' + ' '.join(input_files_paths) 
             window['-CMD-'].update(command)
+            # Single quotation marks won't do in that case. You have to add quotation marks around each path and also enclose the whole command in quotation marks
+            subprocess.Popen(f'start cmd /k "echo {command} & {command} & pause"', shell=True)
+
 
     window.close()
 
